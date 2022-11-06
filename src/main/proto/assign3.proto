@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "via.group1.assign3.protobuf";
+
+service Slaughterhouse {
+    rpc retrieveRegNums(ProductId) returns(InvolvedAnimals);
+    rpc retrieveProdNums(AnimalId) returns(InvolvedProducts); 
+}
+
+message ProductId {
+    int32 idOfProduct = 1;
+}
+
+message AnimalId {
+    int32 idOfAnimal = 1;
+}
+
+message InvolvedAnimals {
+    repeated int32 idOfAnimal = 1;
+}
+
+message InvolvedProducts {
+    repeated int32 idOfProduct = 1;
+}
