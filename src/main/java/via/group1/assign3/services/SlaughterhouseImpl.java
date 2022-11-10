@@ -10,6 +10,8 @@ import via.group1.assign3.protobuf.ProductId;
 import via.group1.assign3.protobuf.SlaughterhouseGrpc.SlaughterhouseImplBase;
 import via.group1.assign3.repositories.DAO;
 
+import java.util.List;
+
 @GRpcService
 public class SlaughterhouseImpl extends SlaughterhouseImplBase {
 
